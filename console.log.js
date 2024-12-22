@@ -7,3 +7,6 @@ console.log(`eas
     
     wazaa`);
 console.log("hola");
+
+
+//ctrl + shift + p   para activar el quokka
