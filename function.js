@@ -16,8 +16,26 @@ function suma(num1 , num2){
 }
 suma(2 , 4)
 
-function suma(num3 , num4){
+function sumab(num3 , num4){
     return num3 + num4
 }
-suma(6 , 4)
+sumab(6 , 4)
 
+
+//funcion anonima
+const sapo = function (str){
+    return str
+}
+console.log(sapo("NoCBro"))
+
+
+//funcion de flecha
+
+const gogo = (a) => {
+    const b = a + 1
+    return b
+}
+console.log(gogo(5))
+
+const gaga = (a) =>  a + 3
+console.log(gaga(5))
