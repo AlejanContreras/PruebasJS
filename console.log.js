@@ -8,5 +8,9 @@ console.log(`eas
     wazaa`);
 console.log("hola");
 
-
+//Instalen Quokka papu
 //ctrl + shift + p   para activar el quokka
+
+
+console.log("11"+1);
+console.log("11"-1);
