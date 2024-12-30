@@ -28,10 +28,10 @@ while(i < 5){
     i++
 }
 
-/*
+
 let edad = prompt("Cual es la mejor edad?")
 while(edad !=="19"){
     console.log("Que edad tan suave")
     edad = prompt ("Cual es la mejor edad?")
 }
-*/
+
