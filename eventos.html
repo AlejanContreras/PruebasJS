@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
 </head>
 <body>
     <!--<button onclick="alert('H')">H</button>-->
-    <button>H</button>
+<!--    <button>H</button>
     <script>
         const button = document.querySelector("button");
         button.addEventListener("click", () => alert("H1"));
@@ -17,3 +18,58 @@
 <!--No c q poner marika-->
 <!--cls18filtrepag-->
 <!--CREAR FILTRO ACA MMVR-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filtro</title>
+</head>
+<body>                      <!--ARREGLAR ESTA MARIKADA-->
+    <input>
+    <button id="filtro"> filtrar</button>
+    <button id="resetear">X</button>
+    <ul></ul>
+    <script>
+        const datos = [
+            {
+            nombre: "Nicolas",
+            },
+            {
+            nombre: "David",
+            },
+            { nombre: "Andres" },
+        ]
+        const botonFiltro = document.querySelector("#filtro");
+        const botonResetear = document.querySelector("#resetear");
+        const input = document.querySelector("input");
+        const ul = document.querySelector("ul");
+
+        const lis = datos.map((li) => `<li>${li.nombre}</li>`);
+        ul.innerText = lis.join("");
+
+        const filtrarLista = () => {
+            const filtrado = datos.filter(item => item.name === input.value);
+
+            if(filtrado.length === 1){
+                const lis = datos.map((li) => `<li>${li.nombre}</li>`);
+                ul.innerText = lis.join("");
+            }
+        }
+
+        const valorInput = () => alert(input.value);
+
+        const restearInput = () => {
+            input.value = "";
+            const lis = datos.map((li) => `<li>${li.nombre}</li>`);
+        ul.innerText = lis.join("");
+        }
+
+        botonFiltro.addEventListener("click", valorInput);
+        botonResetear.addEventListener("click", restearInput);
+
+
+    </script>
+</body>
+</html>
